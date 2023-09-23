@@ -9,7 +9,9 @@ dotenv.config();
 const app: Express = express();
 app.use(express.json({ limit: "500mb" }));
 app.use(express.urlencoded({ extended: true, limit: "500mb" }));
+
 app.use(cors({ origin: true, credentials: true }));
+
 app.listen(5000, () => {
   console.log("connected ts");
 });
