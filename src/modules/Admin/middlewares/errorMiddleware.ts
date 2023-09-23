@@ -12,5 +12,5 @@ export const errorHandler = (err: any, req: Request, res: Response) => {
     statusCode = 401;
     errorMessage = "Unauthorized";
   }
-  res.status(statusCode).json({ status: "error", message: errorMessage });
+  res.status(statusCode).json({ status: "Error", message: errorMessage });
 };

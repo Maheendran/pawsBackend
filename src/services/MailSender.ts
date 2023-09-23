@@ -20,8 +20,8 @@ export const verifyEmail = async (
     const mailOptions: SendMailOptions = {
       from: "maheendrankp100@gmail.com",
       to: email,
-      subject: "For reset Password",
-      html: `<p> Your Paws registration one time password is ${otp} </p>`,
+      subject: "PAWS OTP VERIFICATION ",
+      html: `<p> Your Paws account one time password is ${otp} </p>`,
     };
 
     const info: SentMessageInfo = await transporter.sendMail(mailOptions);

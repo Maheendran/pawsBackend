@@ -38,6 +38,7 @@ export const CreateUser = async (datas: UserInterface) => {
     datas.otp = otp;
     const hashpass = await generateHash(datas.password);
     datas.password = hashpass;
+    
     if (!existingUser) {
       return await saveUser(datas);
     }

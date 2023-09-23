@@ -395,7 +395,7 @@ export const getAllClinicByAddress = async (value: any) => {
  const cityRegex = new RegExp(value.inputvalue, "i");
 
     if(value.search==='clinic'){
-   
+
 const clinicNames=await ClinicModel.aggregate([
   {$match:{clinicName:cityRegex}},
   {
